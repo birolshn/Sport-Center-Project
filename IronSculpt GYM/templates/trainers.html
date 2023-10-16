@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            
+            font-family: sans-serif;
+            
+        }
+        .emptyforTrainers{
+            margin-bottom: 100px;
+        }
+        h1{
+            text-align: center;
+            
+            
+        }
+        hr{
+            margin-bottom: 50px;
+        }
+        .col-sm-12{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            margin-bottom: 50px;
+        }
+        img{
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    {% extends "layout.html" %}
+
+    {% block string %}
+    <div class="emptyforTrainers"></div>
+    
+    <div class="container">
+        <div class="row">
+            <h1 style="color: #62c8d2;">IronSculpt GYM Trainers</h1>
+            <hr>
+            <div class="col-sm-12 col-lg-4">
+                <div class="card border-info" style="width: 18rem; height: 400px;">
+                    <img src="../static/images/trainer1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Arthur Brown</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div class="card border-info" style="width: 18rem; height: 400px;">
+                    <img src="../static/images/trainer6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sarah Clark</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div class="card border-info" style="width: 18rem; height: 400px;">
+                    <img src="../static/images/trainer2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Derek Dean</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div class="card border-info" style="width: 18rem; height: 400px;">
+                    <img src="../static/images/trainer5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mary Connell</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-sm-12 col-lg-4"> 
+                <div class="card border-info" style="width: 18rem; height: 400px;">
+                    <img src="../static/images/trainer3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Coleman Bean</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4"> 
+                <div class="card border-info" style="width: 18rem; height: 400px;">
+                    <img src="../static/images/trainer4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Holly Davis</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    {% endblock string %}
+
+
+</body>
+</html>

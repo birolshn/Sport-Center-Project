@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+    
+       .emptyArea{
+        width: 100%;
+        height: 100px;
+       }
+    </style>
+</head>
+<body>
+    {% extends "layout.html" %}
+
+    
+        {% block string %}
+        <div class="emptyArea"></div>
+        <div class="container">
+            <center><h1 style="color: #62c8d2;">Contact Us</h1>
+            
+            {% from "Includes/_formhelpers.html" import render_field %}
+            <form method=post>
+                <dl>
+                    
+                    
+                    {{ render_field(form.email, class = "form-control") }}
+                    {{ render_field(form.content, class = "form-control") }}
+                    
+                </dl>
+                <button type="submit" class="btn btn-success">SEND</button>
+            </form>
+            </center>
+        </div>
+      
+        {% endblock string %}
+    
+
+    
+</body>
+</html>
